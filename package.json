@@ -1,0 +1,16 @@
+{
+  "name": "react-native-simple-datepicker",
+  "version": "1.0.0",
+  "description": "Simple date picker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "datepicker",
+    "react-native",
+    "expo"
+  ],
+  "author": "Frank Pena",
+  "license": "ISC"
+}
