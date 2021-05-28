@@ -1,8 +1,8 @@
 {
-  "name": "react-native-simple-datepicker",
-  "version": "1.0.0",
+  "name": "react-native-simple-date",
+  "version": "1.0.6",
   "description": "Simple date picker",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,18 @@
     "react-native",
     "expo"
   ],
-  "author": "Frank Pena",
-  "license": "ISC"
+ 
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stealkiller06/react-native-simple-datepicker"
+  },
+  "author": "Frank Pena <frankrosario1998@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.3.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz"
+
+  }
 }

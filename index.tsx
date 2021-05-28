@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {View,TextStyle} from 'react-native'
+import {View,TextStyle,ViewStyle} from 'react-native'
 import Input from './input'
 import {Option} from './interfaces/option'
 import {Months} from './const/months'
@@ -8,15 +8,16 @@ import {getYears} from './const/years'
 const YEARS = getYears();
 
 interface datepickerProps  {
-    date:string,
-    onChange:(date:string)=>void|undefined,
-    icon:any,
-    fontStyle:TextStyle
+    date?:string,
+    onChange?:(date:string)=>void|undefined,
+    icon?:any,
+    fontStyle?:TextStyle,
+    containerStyle?:ViewStyle
 }
 
 export default function DatePicker(props:datepickerProps){
 
-    const {onChange, date,icon,fontStyle} = props;
+    const {onChange, date,icon,fontStyle,containerStyle} = props;
     const [month,setMonth] = useState<Option>()
     const [day,setDay] = useState<Option>()
     const [year,setYear] = useState<Option>()
@@ -88,7 +89,9 @@ export default function DatePicker(props:datepickerProps){
 
         <View style={{
             flexDirection:'row',
+            width:'100%',
             padding: 10,
+            ...containerStyle
         
         }}>
             
