@@ -4,7 +4,8 @@
 
 react-native-simple-date is a beautiful and simple datepicker for react native and expo
 
-[DEMO](https://snack.expo.io/@stealkiller06/expo-radio-button)
+[DEMO](https://snack.expo.io/@stealkiller06/react-native-simple-date)
+
 
 ## Installation
 ```sh
