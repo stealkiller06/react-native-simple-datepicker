@@ -1,5 +1,5 @@
 import React from 'react'
-import {View,Text,TouchableOpacity} from 'react-native'
+import {Text,TouchableOpacity} from 'react-native'
 import {Option} from '../interfaces/option'
 
 type ItemProps = {
@@ -10,7 +10,7 @@ type ItemProps = {
     onPress:(option:Option)=>void
 }
 export default function Item(props:ItemProps){
-    const {label,onPress,value,current,option} = props;
+    const {onPress,value,current,option} = props;
 
     const isSelected = value == current?.value;
     

@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { View, StyleSheet, Text, FlatList, TextStyle, ScrollView, TouchableWithoutFeedback, Animated, ViewStyle } from 'react-native'
+import { View, FlatList, TextStyle, TouchableWithoutFeedback, Animated, ViewStyle } from 'react-native'
 import Item from './modal/item'
 import { Option } from './interfaces/option'
 import styles from './styles'

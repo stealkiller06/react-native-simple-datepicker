@@ -1,28 +1,37 @@
 {
   "name": "react-native-simple-date",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "Simple date picker",
-  "main": "index.tsx",
+  "main": "lib/index",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf ./lib/* && tsc"
   },
   "keywords": [
     "datepicker",
     "react-native",
+    "react-native-datepicker",
+    "expo-datepicker",
     "expo"
   ],
- 
   "repository": {
     "type": "git",
     "url": "https://github.com/stealkiller06/react-native-simple-datepicker"
   },
   "author": "Frank Pena <frankrosario1998@gmail.com>",
   "license": "MIT",
-  "dependencies": {
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
     "typescript": "^4.3.2",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz"
-
+    "@types/expo": "^33.0.1",
+    "@types/react": "^17.0.40",
+    "@types/react-native": "^0.67.2"
+  },
+  "peerDependencies": {
+    "react-native": "*",
+    "expo": "*"
   }
 }
